@@ -1,0 +1,19 @@
+.topNav{
+    height: 40px;
+    background: grey;
+    display: flex;
+    flex-direction: row;
+    a {
+        width: 100px;
+        text-decoration: none;
+        font-size: 14;
+        font-weight: normal;
+        &:hover{
+            background: pink;
+        }
+        &.active{
+            color: white !important;
+            background: green;
+        }
+    }
+}
