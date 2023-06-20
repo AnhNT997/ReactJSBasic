@@ -5,6 +5,8 @@ import Nav from "./nav/Nav";
 import Example from "./example/Example";
 import AboutReact from "./About/About";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import UserComponent from "./User/User";
+import UserDetail from "./User/UserDetail";
 function App() {
   return (
     <BrowserRouter>
@@ -20,6 +22,12 @@ function App() {
             </Route>
             <Route path="/todo">
               <ListTodos></ListTodos>
+            </Route>
+            <Route path="/user" exact>
+              <UserComponent></UserComponent>
+            </Route>
+            <Route path="/user/:id">
+              <UserDetail></UserDetail>
             </Route>
           </Switch>
         </header>
